@@ -1,0 +1,99 @@
+/* Estilos Generales */
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Bangers', cursive;
+  color: #d02626;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+/* Contenedor Principal */
+.heroes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Estilos para las Cartas de los Héroes */
+cartas-heroes {
+  display: inline-block;
+  width: 100%;
+  max-width: 320px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+  transition: transform 0.3s ease;
+}
+
+cartas-heroes:hover {
+  transform: translateY(-10px);
+}
+
+cartas-heroes img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 2px solid #ccc;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+#namee {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+#alias {
+  font-size: 1em;
+  color: #666;
+}
+
+#estudio,
+#presentacion,
+#descripcion {
+  font-size: 0.9em;
+  color: #444;
+  margin-top: 5px;
+}
+
+/* Estilos para la Barra de Búsqueda */
+searchhh {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 800px;
+  padding: 10px;
+  font-size: 22px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .heroes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  cartas-heroes {
+    width: 100%;
+    max-width: 100%;
+  }
+}
